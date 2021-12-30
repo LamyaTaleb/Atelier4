@@ -5,17 +5,17 @@ pipeline {
     stages {
         stage('Clean') {
             steps {
-                sh 'mvn clean'
+                sh ' cd my-app;mvn clean'
             }
         }
         stage('Test') {
             steps {
-                sh 'mvn test'
+                sh 'cd my-app; mvn test'
             }
         }
         stage('Package') {
             steps {
-                sh 'mvn package'
+                sh ' cd my-app;mvn package'
             }
         }
     }
