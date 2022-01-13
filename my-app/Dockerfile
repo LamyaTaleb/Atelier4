@@ -1,4 +1,4 @@
 From openjdk :8
-EXPOSE 8080
-ADD target/name_jar_généré.jar name_jar_généré.jar
-ENTRYPOINT ["java","-jar","/name_jar_généré.jar"]
+EXPOSE 9090
+ADD target/my-app-1.0-SNAPSHOT.jar my-app-1.0-SNAPSHOT.jar
+ENTRYPOINT ["java","-jar","/my-app-1.0-SNAPSHOT.jar"]
